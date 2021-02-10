@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&display=swap');
 
 :root {
-    font-family: font-family: 'Open Sans', sans-serif;;
+    font-family: font-family: 'Open Sans', sans-serif;
+    --main-color: black;
+    --accent-color: rgb(50, 206, 211);
+    scroll-behaviour: smooth;
+
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
 }
 
 header nav .logo {
     font-family: 'Libre Baskerville', serif;
-    color: black;
+   color: var(--main-color);
     font-size: 3.5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -18,6 +27,7 @@ header nav .menu {
     justify-content: space-around;
     list-style-type: none;
     padding: 0%;
+    flex-direction: column;
 }
 
 .product-list {
@@ -50,4 +60,8 @@ p::first-letter {
 p::hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.burger-icon {
+
 }
